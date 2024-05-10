@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/responsive_design.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="favicon" href="favicon/favicon.ico">
+</head>
+<body>
+    <section class="container">
+        <section id="page-title">
+            Task Manager
+        </section>
+
+        <section class="task-input-section">
+            <form id="input-form">
+                <div class="title">
+                    Add Task
+                </div>
+
+                <input type="text" name="todoInput" class="task-input" placeholder="Try typing 'Pay utilities bill by Friday 6pm'" autocomplete="off">
+
+                <input type="submit" name="submit-button" class="submit-button" value="ADD TASK">
+            </form>
+        </section>
+
+        <section class="to-do-list-container sub-container1">
+            <div class="title">
+                TASKS LIST
+            </div>
+
+            <div class="empty-message-container hide" id="pending-tasks"></div>
+
+            <div class="to-do-list-item-container">
+            </div>
+        </section>
+
+        <section class="to-do-list-container sub-container2">
+            <div class="title">
+                COMPLETED TASKS
+            </div>
+
+            <div class="empty-message-container hide" id="completed-tasks"></div>
+
+            <div class="to-do-list-item-container to-do-list-item-container-completed-tasks">
+            </div>
+        </section>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
