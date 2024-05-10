@@ -43,7 +43,7 @@ const App = () => {
 			<Wrapper>
 				<AlertBox alert={alert} closeAlert={closeAlert}/>
 				<Routes>
-					<Route exact path="/" element={<Register/>}/>
+					<Route exact path="/" element={<Register showAlert={showAlert}/>}/>
 					<Route exact path="/register" element={<Register showAlert={showAlert}/>}/>
 					<Route exact path="/login" element={<Login showAlert={showAlert}/>}/>
 					<Route exact path="/secured" element={<SecuredPage showAlert={showAlert}/>}/>
